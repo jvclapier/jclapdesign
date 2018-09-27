@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block resources %}
+    <link href="{% static 'homepage/index.css' %}" rel="stylesheet" type="text/css">
+
+{% endblock resources %}
+
+{% block content %}
+<div id="landing-background" class="container-fluid">
+    <img class="img-responsive rellax" data-rellax-speed="6" data-rellax-zindex="10" src="{% static "landing_background_L1.svg" %}" alt="">
+    <img class="img-responsive rellax" data-rellax-speed="6" src="{% static "landing_background_boat.svg" %}" alt="">
+    <img class="img-responsive rellax" style="z-index: -10;" data-rellax-speed="5" data-rellax-zindex="0" src="{% static "landing_background_L3.svg" %}" alt="">
+    <img class="img-responsive rellax" style="z-index: -15; top:10px;" data-rellax-speed="7" data-rellax-zindex="0" src="{% static "landing_background_title.svg" %}" alt="">
+    <img class="img-responsive rellax" style="z-index: -20;" data-rellax-speed="3" data-rellax-zindex="0" src="{% static "landing_background_L4.svg" %}" alt="">
+    <img class="img-responsive rellax" style="z-index: -30;" data-rellax-speed="2" data-rellax-zindex="0" src="{% static "landing_background_L5.svg" %}" alt="">
+</div>
+
+
+<script src="{% static "rellax.min.js" %}"></script>
+<script type="text/javascript" src="{% static "homepage/index.js" %}"></script>
+
+<script>
+    // Accepts any class name
+    var rellax = new Rellax('.rellax');
+
+    window.onbeforeunload = function () {
+      window.scrollTo(0, 0);
+    }
+
+
+
+</script>
+
+
+{% endblock content %}

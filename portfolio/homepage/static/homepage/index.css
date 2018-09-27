@@ -1,0 +1,33 @@
+#landing-background {
+    padding:0px;
+}
+
+.rellax {
+    position: absolute;
+}
+
+.rellax-horizontal {
+    position: absolute;
+}
+
+.invisible {
+  transition: opacity 0.5s ease;
+  opacity: 0.0;
+}
+
+.visible {
+  transition: opacity 0.5s ease;
+  opacity: 1.0;
+}
+
+.animateIn {
+    transition: left 4s ease;
+    position: absolute;
+    left: 200px;
+}
+
+.animateOut {
+    transition: left 4s ease;
+    position: absolute;
+    left:0px;
+}
