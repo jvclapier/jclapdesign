@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block resources %}
+<link href="{% static 'homepage/mywork.css' %}" rel="stylesheet" type="text/css">
+
+{% endblock resources %}
+
+{% block content %}
+    <div class="container-fluid case-container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h6>My Work</h6>
+                <hr>
+                <h1>Mentors International</h1>
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-8 offset-md-2">
+                <h6>Overview</h6>
+                <p> This project was a special one as it took my wife and I back to my former home, the Philippines.
+                    <a href="https://mentorsinternational.org/">Mentors International</a> is a global non-profit that helps people in poverty become entrepreneurs.
+                    They rely heavily on volunteers, such as my wife and I, who sacrifice their time, money and talents to further the fight against poverty.
+                    Seeing the need for a better process to track client engagement and volunteer onboarding, I set out to build a solution.
+                </p>
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-4 offset-md-2">
+                <img class="screenshot img-responsive" src="{% static "homepage/mentors_brainstorming.jpg" %}" alt="">
+            </div>
+            <div class="col-md-4">
+                <img class="screenshot img-responsive" src="{% static "homepage/mentors_drawing.jpg" %}" alt="">
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-8 offset-md-2">
+                <h6>The Process</h6>
+                <p> With limited time, I had to work fast. I created a team and we got to work. The process was difficult as we had limited resources and needed a solution
+                    that would work on any smartphone and ridiculously slow internet connections. We brainstormed multiple options while continuously working with management
+                    and other volunteers to collect feedback. After many iterations we were able to come to a decision. The solution was a responsive, lightweight
+                    web application built on the Django framework. Because the site would be accessed on the phone, I designed it using the mobile first methodology. Also, being
+                    the only volunteer with web development experience I had to train my team on multiple new technologies and programming languages.
+                </p>
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-8 offset-md-2">
+                <img class="img-responsive screenshot" src="{% static "homepage/mentors_sketch.png" %}" alt="">
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-8 offset-md-2">
+                <h6>Finished Product</h6>
+                <p>After a very quick and agile development process, the web application was approved by upper management for deployment.
+                    By November 2018, the app will be being used in four countries, United States, Peru, Ghana and the Philippines.
+                </p>
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-4 offset-md-2">
+                <img class="screenshot img-responsive" src="{% static "homepage/mentors_screenshot_login.png" %}" alt="">
+            </div>
+            <div class="col-md-4">
+                <img class="screenshot img-responsive" src="{% static "homepage/mentors_screenshot_homepage.png" %}" alt="">
+            </div>
+        </div>
+    </div>
+    {% endblock content %}

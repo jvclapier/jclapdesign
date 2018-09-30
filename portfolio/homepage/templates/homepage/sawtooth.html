@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block resources %}
+<link href="{% static 'homepage/mywork.css' %}" rel="stylesheet" type="text/css">
+
+{% endblock resources %}
+
+{% block content %}
+<div class="container-fluid case-container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <h6>My Work</h6>
+            <hr>
+            <h1>Sawtooth Software</h1>
+        </div>
+    </div>
+    <div class="row mt-5 mb-5">
+        <div class="col-md-8 offset-md-2">
+            <h6>Overview</h6>
+            <p> <a href="http://sawtoothsoftware.com/">Sawtooth Software</a> has been in business for over 30 years. Their specialized survey software is the industry leader in Conjoint and MaxxDiff Analysis.
+                Recently I brought to their attention the need to create consistency and enhance clarity across all of their applications.
+                I was lucky enough to be given the automony to lead the design and development of the next Salesforce Lightning...Well not quite to that scale but a design system nonetheless.
+                Unfortunately, due to privacy reasons,
+                I cannot share the bulk of this project, including screenshots. So if you doubt me, just ask my wife because I'm sure she is sick of me talking about design systems :)  </p>
+                <img class="mt-5 screenshot" src="{% static "homepage/ui_inventory.jpg" %}" alt="">
+                <br>
+                <p style="font-size:0.75rem; margin-left:30px; margin-top:10px; font-style:italic;">* Example of an interface inventory similar to what I created.</p>
+                <h6 class="mt-5">Responsibilities</h6>
+                <p>
+                    <ul>
+                        <li>Analyze current processes of development and implementation</li>
+                        <li>Work with stakeholders and upper management to ensure designs align with company mission and vision</li>
+                        <li>Create interface inventory of all applications</li>
+                        <li>Collaborate with developers to create code inventory</li>
+                        <li>Design new design system</li>
+                        <li>Write extensive documentation for designers and developers</li>
+                        <li>Manage the testing and implementation of new system</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}

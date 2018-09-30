@@ -22,3 +22,13 @@ def index(request):
 
 
     return render(request, 'homepage/index.html')
+
+def sawtooth(request):
+
+
+    return render(request, 'homepage/sawtooth.html')
+
+def mentors(request):
+
+
+    return render(request, 'homepage/mentors.html')
