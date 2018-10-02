@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}XLR8{% endblock title %}
+
+{% block resources %}
+<link href="{% static 'homepage/mywork.css' %}" rel="stylesheet" type="text/css">
+
+{% endblock resources %}
+
+{% block content %}
+    <div class="container-fluid case-container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h6>My Work</h6>
+                <hr>
+                <h1>XLR8 Development LLC.</h1>
+                <h6>Illustrator | Photoshop | Sketch | Django | Python | CSS | HTML | JS</h6>
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-8 offset-md-2">
+                <h6>Overview</h6>
+                <p> XLR8 was just over a year old when I was brought in. They had seen such rapid growth by word of mouth that the homepage had become an afterthought.
+                    However, once the initial growth ended they were in desperate need of some marketing. The comapny was founded to help build future leaders. They do this
+                    by taking chances on college students still working on their degrees. They then give these students real world responsibilities with big time clients.
+                    The result is invaluable experience for the students and an exceptional product at a fraction of the cost for the comapnies. A true win-win. XLR8 needed
+                    to convey this message in their homepage. The goal was to help potential clients and employees catch the vision of XLR8.
+                </p>
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-8 offset-md-2">
+                <img class="screenshot img-responsive" src="{% static "homepage/xlr8_prototype.png" %}" alt="">
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-8 offset-md-2">
+                <h6>The Process</h6>
+                <p>Like many projects, time was of the essence. Unlike many projects,
+                    I was completely on my own and the CEO did not seem to have any negative feedback. Now you may think
+                    that this was a great thing. In many ways it was. Whatever I imagined and designed was approved. I didn't
+                    have to wait for any approvals or wiggle my way through any red tape. I had complete autonomy. The fact is, their old site
+                    was so lacking that they were just happy with anything new. I was able to get the site built and deployed in
+                    time for their big campus recruiting event.
+
+                </p>
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-4 offset-md-2">
+                <img class="screenshot img-responsive" src="{% static "homepage/xlr8-mobile-2.jpg" %}" alt="">
+            </div>
+            <div class="col-md-4">
+                <img class="screenshot img-responsive" src="{% static "homepage/xlr8-mobile-1.jpeg" %}" alt="">
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-8 offset-md-2">
+                <h6>The Finished Product</h6>
+                <p> So what was wrong with all this? Well, I realized that I actually missed the feedback. The whole design process was just
+                    different. The only person challenging my designs, was myself. Which created a real weird paradox. There was nothing
+                    pushing me to ask the critical questions. In the end, I do not think that I created the best possible product.The product
+                    does the job and the client was happy but I just feel like it could have been better.</p>
+            </div>
+        </div>
+        <!-- WORKING ON THE ARROWS -->
+        <div class="row mt-5 mb-5">
+            <div class="col-md-2 offset-md-2 text-center">
+                <a href="/pixingo">
+                    <h6 class="d-flex align-items-center justify-content-center">
+                        <object class="arrows mr-4" type="" data="{% static "homepage/back-arrow.svg" %}">
+                        </object>
+                        Back
+                    </h6>
+                </a>
+            </div>
+            <div class="col-md-2 offset-md-4 text-center">
+                <a href="/" class="">
+                    <h6 class="d-flex align-items-center justify-content-center">Next
+                        <object class="arrows ml-4" type="" data="{% static "homepage/next-arrow.svg" %}">
+                        </object>
+                    </h6>
+                </a>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}

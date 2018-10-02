@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block title %}Sawtooth{% endblock title %}
+
 {% block resources %}
 <link href="{% static 'homepage/mywork.css' %}" rel="stylesheet" type="text/css">
 
@@ -13,6 +15,7 @@
             <h6>My Work</h6>
             <hr>
             <h1>Sawtooth Software</h1>
+            <h6>Sketch | Illustrator | Creative Cloud</h6>
         </div>
     </div>
     <div class="row mt-5 mb-5">
@@ -39,6 +42,18 @@
                     </ul>
                 </p>
             </div>
+        </div>
+    </div>
+    <div class="row mt-5 mb-5">
+        <div class="col-md-2 offset-md-2 text-center">
+        </div>
+        <div class="col-md-2 offset-md-4 text-center">
+            <a href="/mentors" class="">
+                <h6 class="d-flex align-items-center justify-content-center">Next
+                    <object class="arrows ml-4" type="" data="{% static "homepage/next-arrow.svg" %}">
+                    </object>
+                </h6>
+            </a>
         </div>
     </div>
     {% endblock content %}

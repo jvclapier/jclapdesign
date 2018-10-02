@@ -32,3 +32,28 @@ def mentors(request):
 
 
     return render(request, 'homepage/mentors.html')
+
+def boda(request):
+
+
+    return render(request, 'homepage/boda.html')
+
+def xlr8(request):
+
+
+    return render(request, 'homepage/xlr8.html')
+
+def pixingo(request):
+
+
+    return render(request, 'homepage/pixingo.html')
+
+def oilbarn(request):
+
+
+    return render(request, 'homepage/oilbarn.html')
+
+def parentiq(request):
+
+
+    return render(request, 'homepage/parentiq.html')

@@ -1,0 +1,126 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Mentors{% endblock title %}
+
+{% block resources %}
+<link href="{% static 'homepage/mywork.css' %}" rel="stylesheet" type="text/css">
+
+{% endblock resources %}
+
+{% block content %}
+    <div class="container-fluid case-container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h6>My Work</h6>
+                <hr>
+                <h1>ParentIQ</h1>
+                <h6>Sketch | Illustrator | Django | Python | HTML5 | CSS3 | SQL</h6>
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-8 offset-md-2">
+                <h6>Overview</h6>
+                <p> Where does one begin with ParentIQ? I guess from the beginning makes the most sense. ParentIQ is a site dedicated to helping strengthen
+                    families. The company does a lot of good in this world. Their trainings and courses cover everything from dealing with drug-addicted teenagers
+                    to improving communication between spouses. They brought me on to completely rebuild their old site. The original ParentIQ site (as seen below)
+                    was a hot mess. I mean just take a look for yourself. (I personal love the Learn More buttons!) And if the front-end looked that bad, you can only imagine the back-end. The good news was
+                    the owners were fully aware of its "outdated-ness" and wanted to start from scratch. The bad news was, they really did not know what they wanted.
+                </p>
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-8 offset-md-2">
+                <img class="screenshot img-responsive" src="{% static "homepage/original_parentiq.jpg" %}" alt="">
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-8 offset-md-2">
+                <h6>The Process</h6>
+                <p> After meeting with all the key stakeholders to determine project requirements and set expectations, I set to work designing the site. ParentIQ was the biggest
+                    project I had ever done. It had to have admin portals, super admin portals, public facing sites, internal sites, DB management, payment processing and much more.
+                    It was a lot more than just a classic landing page redesign. I knew with the scope of such a project I needed to do my best to be flexible to change because it could
+                    come from so many different directions. And believe me it came.
+                </p>
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-8 offset-md-2">
+                <img class="img-responsive screenshot" src="{% static "homepage/parentiq_wireframes.png" %}" alt="">
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-8 offset-md-2">
+                <img class="img-responsive screenshot" src="{% static "homepage/parentiq_userportal.png" %}" alt="">
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-8 offset-md-2">
+                <p>
+                    Initially, everything was smooth sailing. I built out an extensive prototype based on the arbitrary wireframes I was given (pictured above) and tested it with stakeholders. After a couple weeks of modifications the designs were approved
+                    and we began building. In retrospect, I did not truly understand what was meant by "make decisions in the browser." Now I know. It wasn't until I began to build everything
+                    that management decided they wanted things done differently. Honestly, I began to be a little peeved. I mean, they already signed off on the design so why all the changes?
+                    Usually I am not bothered at little changes. It is the nature of the job. But this was different. It wasn't just changing the placement of a title or button, it was things such as
+                    restructuring the entire database and a complete redesign of the UI. When this was brought up to me I about lost it. Completely redo the whole prototype? Are you joking? Well they were
+                    not joking. Fortunately, I handled things very calmly and sought to further understand their concerns.
+                    <br>
+                    <br>
+                    Upon talking with the manager for an extended period of time I discovered that the true concern was she felt the design lacked flow. It was "too blocky." At first, I thought, "Ok this is
+                    going to be a tall task to redo the grid layout so it is not as blocky." Then it hit me, white space and border radius. I don't know why it took me so long but I realized that with a few
+                    color changes and some rounding of some edges the site would have a completely new look and feel. So that is what I did.
+
+                </p>
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-8 offset-md-2">
+                <img class="img-responsive screenshot" src="{% static "homepage/parentiq_whitespace.png" %}" alt="">
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-8 offset-md-2">
+                <p> Little did I know that was just the beginning. I don't want to bore you with all the details but the changes kept coming. The final one was about two weeks before launch, they decided they wanted
+                    a new logo. Now I didn't design the logo in the first place but they decided now they wanted one. So long story short, the two weeks leading up to the launch was the most iterations of a logo design
+                    I have ever experienced. Finally they got the logo they wanted which I honestly really dislike. But they are the ones paying the bills so if they are happy I am happy.
+                </p>
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-8 offset-md-2">
+                <img class="img-responsive screenshot" src="{% static "homepage/parentiq_logos.png" %}" alt="">
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-8 offset-md-2">
+                <h6>Finished Product</h6>
+                <p>The site eventually did launch and is running great! Sorry for the novel :)
+                </p>
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-8 offset-md-2">
+                <img class="img-responsive screenshot" src="{% static "homepage/parentiq_landingpage.png" %}" alt="">
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-2 offset-md-2 text-center">
+                <a href="/mentors">
+                    <h6 class="d-flex align-items-center justify-content-center">
+                        <object class="arrows mr-4" type="" data="{% static "homepage/back-arrow.svg" %}">
+                        </object>
+                        Back
+                    </h6>
+                </a>
+            </div>
+            <div class="col-md-2 offset-md-4 text-center">
+                <a href="/oilbarn" class="">
+                    <h6 class="d-flex align-items-center justify-content-center">Next
+                        <object class="arrows ml-4" type="" data="{% static "homepage/next-arrow.svg" %}">
+                        </object>
+                    </h6>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    {% endblock content %}

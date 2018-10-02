@@ -101,28 +101,32 @@
           transform: translateY(-60px);
 }
 
-#card-1.example-2 .wrapper {
-  background: url("seed_site_demo_2.jpg") center/cover no-repeat;
-}
-
-#card-2.example-2 .wrapper {
+#card-7.example-2 .wrapper {
   background: url("stanley-lake-demo.jpg") center/cover no-repeat;
 }
 
-#card-3.example-2 .wrapper {
-    background: url("oilbarn_demo_edit.jpg") center/cover no-repeat;
-}
-
-#card-4.example-2 .wrapper {
-  background: url("pixingo_demo.jpg") center/cover no-repeat;
+#card-6.example-2 .wrapper {
+  background: url("seed_site_demo_2.jpg") center/cover no-repeat;
 }
 
 #card-5.example-2 .wrapper {
+    background: url("parentiq_demo.jpg") center/cover no-repeat;
+}
+
+#card-4.example-2 .wrapper {
+    background: url("oilbarn_demo_edit.jpg") center/cover no-repeat;
+}
+
+#card-3.example-2 .wrapper {
+  background: url("pixingo_demo.jpg") center/cover no-repeat;
+}
+
+#card-2.example-2 .wrapper {
     background: url("xlr8_demo.jpg") center/cover no-repeat;
 
 }
 
-#card-6.example-2 .wrapper {
+#card-1.example-2 .wrapper {
   background: url("boda_demo.jpg") center/cover no-repeat;
 }
 .example-2 .wrapper:hover .menu-content span {
@@ -204,4 +208,8 @@
     width: 17px;
     float: left;
     position: relative;
+}
+
+#emailme:hover {
+    text-decoration: underline;
 }

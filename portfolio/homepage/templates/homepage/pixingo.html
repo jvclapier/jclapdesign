@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Pixingo{% endblock title %}
+
+{% block resources %}
+<link href="{% static 'homepage/mywork.css' %}" rel="stylesheet" type="text/css">
+
+{% endblock resources %}
+
+{% block content %}
+    <div class="container-fluid case-container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h6>My Work</h6>
+                <hr>
+                <h1>Pixingo</h1>
+                <h6>Swift | RubyMotion | Illustrator</h6>
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-8 offset-md-2">
+                <h6>Overview</h6>
+                <p> Coming in at half-time is never an easy task. Especially when you have no playbook. Excuse the sports analogy but I cannot
+                    help it. <a href="https://itunes.apple.com/us/app/pixingo-mobile/id992162612?mt=8">Pixingo's iOS app</a> was five years old and in need of a revamp. I lead a team of developers in multiple states to analyze the
+                    current app and then design and make changes in order to optimize performance.
+                </p>
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-8 offset-md-2">
+                <h6>The Process</h6>
+                <p> This project had a unique set of challenges. It was unique in the fact that I did not start of scratch. Instead I was challenged with
+                    ensuring that the new elements I design were unified with existing elements. The real pain in this project was dealing with the old technologies.
+                    My team was low on resources which lead to me playing a much bigger role on the actual development side. Trying to build an iOS app on outdated technology
+                    was equivalent to merely pounding your head against a wall. Once you broke through the dry wall, you were greeted with a thick stud. Sorry again for the analogy :)
+                    However, with much perseverance we were able to succeed. </p>
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-8 offset-md-2">
+                <h6>The Finished Product</h6>
+                <p> Pixingo is now available in the App Store. My work was extremely successful as it resulted in the company being able to push live to the App Store for the first time
+                    in about five years. </p>
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-8 offset-md-2">
+                <img class="screenshot img-responsive" src="{% static "homepage/pixingo-3frames.png" %}" alt="">
+            </div>
+        </div>
+        <!-- WORKING ON THE ARROWS -->
+        <div class="row mt-5 mb-5">
+            <div class="col-md-2 offset-md-2 text-center">
+                <a href="/oilbarn">
+                    <h6 class="d-flex align-items-center justify-content-center">
+                        <object class="arrows mr-4" type="" data="{% static "homepage/back-arrow.svg" %}">
+                        </object>
+                        Back
+                    </h6>
+                </a>
+            </div>
+            <div class="col-md-2 offset-md-4 text-center">
+                <a href="/xlr8" class="">
+                    <h6 class="d-flex align-items-center justify-content-center">Next
+                        <object class="arrows ml-4" type="" data="{% static "homepage/next-arrow.svg" %}">
+                        </object>
+                    </h6>
+                </a>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}

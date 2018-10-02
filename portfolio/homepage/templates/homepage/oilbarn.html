@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Oil Barn{% endblock title %}
+
+{% block resources %}
+<link href="{% static 'homepage/mywork.css' %}" rel="stylesheet" type="text/css">
+
+{% endblock resources %}
+
+{% block content %}
+    <div class="container-fluid case-container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h6>My Work</h6>
+                <hr>
+                <h1>The Oil Barn</h1>
+                <h6>Photoshop | Illustrator | Sketch | Wix</h6>
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-8 offset-md-2">
+                <h6>Overview</h6>
+                <p> Farmers really are the heart of this country. Having a chance to help a young man bring his brick and mortar business online was a real treat.
+                    The Oil Barn needed a scalable and easy to maintain ecommerce site. And they needed it quick. I designed their new site to establish a brand identity
+                    that exemplifies the love of the earth and of hard work that these farmers possess.
+                </p>
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-8 offset-md-2">
+                <img class="screenshot img-responsive" src="{% static "homepage/oilbarn_colors.png" %}" alt="">
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-8 offset-md-2">
+                <h6>The Process</h6>
+                <p> As with many of my projects, time is of the essence. To solve this problem I went with the WiX platform for ease of use.
+                    The client also wanted to self-maintain the site in the future which made Wix a good, simple choice. Choosing the colors was
+                    particularly hard as they played a vital role in establishing the feel of the brand and company. I was able to create a palette
+                    that the CEO loved.
+                    </p>
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-8 offset-md-2">
+                <img class="screenshot img-responsive" src="{% static "homepage/oilbarn-3frames.png" %}" alt="">
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-8 offset-md-2">
+                <h6>The Finished Product</h6>
+                <p> The project was a huge success and the deadline was met. The finished product can be seen above. </p>
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-2 offset-md-2 text-center">
+                <a href="/parentiq">
+                    <h6 class="d-flex align-items-center justify-content-center">
+                        <object class="arrows mr-4" type="" data="{% static "homepage/back-arrow.svg" %}">
+                        </object>
+                        Back
+                    </h6>
+                </a>
+            </div>
+            <div class="col-md-2 offset-md-4 text-center">
+                <a href="/pixingo" class="">
+                    <h6 class="d-flex align-items-center justify-content-center">Next
+                        <object class="arrows ml-4" type="" data="{% static "homepage/next-arrow.svg" %}">
+                        </object>
+                    </h6>
+                </a>
+            </div>
+        </div>
+    </div>
+    {% endblock content %}

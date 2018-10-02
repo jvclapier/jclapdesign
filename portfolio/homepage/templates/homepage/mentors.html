@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block title %}Mentors{% endblock title %}
+
 {% block resources %}
 <link href="{% static 'homepage/mywork.css' %}" rel="stylesheet" type="text/css">
 
@@ -13,6 +15,7 @@
                 <h6>My Work</h6>
                 <hr>
                 <h1>Mentors International</h1>
+                <h6>Sketch | Illustrator | Django | Python | HTML5 | CSS3 | SQL</h6>
             </div>
         </div>
         <div class="row mt-5 mb-5">
@@ -63,6 +66,25 @@
             </div>
             <div class="col-md-4">
                 <img class="screenshot img-responsive" src="{% static "homepage/mentors_screenshot_homepage.png" %}" alt="">
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-2 offset-md-2 text-center">
+                <a href="/sawtooth">
+                    <h6 class="d-flex align-items-center justify-content-center">
+                        <object class="arrows mr-4" type="" data="{% static "homepage/back-arrow.svg" %}">
+                        </object>
+                        Back
+                    </h6>
+                </a>
+            </div>
+            <div class="col-md-2 offset-md-4 text-center">
+                <a href="/parentiq" class="">
+                    <h6 class="d-flex align-items-center justify-content-center">Next
+                        <object class="arrows ml-4" type="" data="{% static "homepage/next-arrow.svg" %}">
+                        </object>
+                    </h6>
+                </a>
             </div>
         </div>
     </div>
