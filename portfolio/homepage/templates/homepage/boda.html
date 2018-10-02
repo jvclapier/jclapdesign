@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}BODA{% endblock title %}
+
+{% block resources %}
+<link href="{% static 'homepage/mywork.css' %}" rel="stylesheet" type="text/css">
+
+{% endblock resources %}
+
+{% block content %}
+    <div class="container-fluid case-container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h6>My Work</h6>
+                <hr>
+                <h1>BODA Lens LLC</h1>
+                <h6>Illustrator | Photoshop | Wix | Alibaba</h6>
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-8 offset-md-2">
+                <h6>Overview</h6>
+                <p> Few things are more exciting than starting your own business. It is stressful, exhausting and requires tremendous faith that things will work out.
+                    When my brother in-law came to me with the idea of creating our own camera lenses, I was a bit apprehensive at first. I was recently married, in school full-time
+                    and had no money. I could not afford the sweat equity required to make the company successful. However, I knew it would be an invaluable experience and would push
+                    me to do things I didn't think possible. My wonderful wife was a major advocate of taking the risk. And I am so grateful she was.
+                    Being able to design a product and see it through the whole product development life cycyle taught me more than anything I was studying in school or working on at my 9-5 job.
+                </p>
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-8 offset-md-2">
+                <img class="screenshot img-responsive" src="{% static "homepage/boda_packaging.png" %}" alt="">
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-8 offset-md-2">
+                <h6>The Process</h6>
+                <p> My brother in-law and I began by brainstorming the product. We had done significant research on current amazon trends and knew we wanted to do mobile phone accessories.
+                    Once we decided on camera lenses we began reaching out to manufacturers. We began testing products from different factories until we found the material we wanted. I then worked
+                    closely with the chosen manufacturer to make changes and adjustment to the product until it was exactly what we wanted. Not only was I in charge of the product design, I design
+                    all packaging and promotional material including, our website, facebook ads, user manuals, in-store displays and trade show displays. The design process was a blast. We were able to get a few famous instagrammers
+                    to be our beta testers. They provided extremely valuable feedback on the product and our designs. I continued to make changes and adapt to the feedback that was received.
+                </p>
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-4 offset-md-2">
+                <img class="screenshot img-responsive" src="{% static "homepage/boda_display.jpg" %}" alt="">
+            </div>
+            <div class="col-md-4">
+                <img class="screenshot img-responsive" src="{% static "homepage/boda_display2.jpg" %}" alt="">
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-8 offset-md-2">
+                <h6>The Finished Product</h6>
+                <p> Once the first full shipment arrived we went to work. We sold everywhere we could. We built our online presence and began attending tradeshows. We then began reaching out to
+                local stores. After lots of product demos we were able to land a deal with one of Utah's biggest mobile phone repair stores, Bad Apple. Within a week we had our product in 15 stores
+                across the state fo Utah. Then within just a couple of months we were able to earn back our initial investment and get in the green.</p>
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-8 offset-md-2">
+                <img class="screenshot img-responsive" src="{% static "homepage/boda_3frames.svg" %}" alt="">
+            </div>
+        </div>
+        <!-- WORKING ON THE ARROWS -->
+        <div class="row mt-5 mb-5">
+            <div class="col-md-2 offset-md-2 text-center">
+                <a href="/xlr8">
+                    <h6 class="d-flex align-items-center justify-content-center">
+                        <object class="arrows mr-4" type="" data="{% static "homepage/back-arrow.svg" %}">
+                        </object>
+                        Back
+                    </h6>
+                </a>
+            </div>
+            <!-- <div class="col-md-2 offset-md-4 text-center">
+                <a href="/xlr8" class="">
+                    <h6 class="d-flex align-items-center justify-content-center">Next
+                        <object class="arrows ml-4" type="" data="{% static "homepage/next-arrow.svg" %}">
+                        </object>
+                    </h6>
+                </a>
+            </div> -->
+        </div>
+    </div>
+{% endblock content %}
