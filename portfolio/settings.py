@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
+from os.path import join, dirname
+from dotenv import load_dotenv
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -26,8 +28,11 @@ SECRET_KEY = '1tld0-am7fnidv5zla2$)s+n7m%3u$fas7b!f)t9j!ozg$#w__'
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    'jclapdesign.herokuapp.com',
     'localhost',
+    '127.0.0.1',
     '10.37.145.164',
+    'https://jclapdesign.herokuapp.com/',
 ]
 
 
@@ -80,11 +85,11 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'jclapdesign',
-        'USER': 'postgres',
-        'PASSWORD': 'password',
-        'HOST': 'localhost',
-        'PORT': '',
+        'NAME': os.environ['H_DATABASE_NAME'],
+        'USER': os.environ['H_DATABASE_USER'],
+        'PASSWORD': os.environ['H_DATABASE_PASSWORD'],
+        'HOST': os.environ['H_DATABASE_HOST'],
+        'PORT': '5432',
     }
 }
 
