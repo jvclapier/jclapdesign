@@ -198,3 +198,91 @@ ul {
 .nav-logo {
     width: 150px;
 }
+
+/* MEDIA QUERIES */
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 320px) and (max-width: 767px) {
+    #body-under-parallax {
+        position: inherit;
+    }
+
+    #landing-background .rellax {
+        display: none;
+    }
+
+    #landing-background {
+        height:300px;
+        /* Location of the image */
+        background-image: url(landing_background_mobile.svg);
+
+        /* Background image is centered vertically and horizontally at all times */
+        background-position: center center;
+
+        /* Background image doesn't tile */
+        background-repeat: no-repeat;
+
+        /* Background image is fixed in the viewport so that it doesn't move when
+           the content's height is greater than the image's height */
+        /* background-attachment: fixed; */
+
+        /* This is what makes the background image rescale based
+           on the container's size */
+        background-size: cover;
+
+        /* Set a background color that will be displayed
+           while the background image is loading */
+        background-color: white;
+    }
+
+
+
+}
+
+
+  /* ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+} */

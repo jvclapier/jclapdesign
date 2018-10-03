@@ -23,6 +23,15 @@
     color: #2b2b2b;
 }
 
+#landing-front {
+    z-index:0;
+    top:325px;
+}
+
+#mobile_landing_image {
+    display:none;
+}
+
 .card {
   float: left;
   /* padding: 0 1.7rem; */
