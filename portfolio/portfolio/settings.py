@@ -85,10 +85,10 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'jclapdesign',
-        'USER': 'postgres',
-        'PASSWORD': 'password',
-        'HOST': 'localhost',
+        'NAME': os.environ['H_DATABASE_NAME'],
+        'USER': os.environ['H_DATABASE_USER'],
+        'PASSWORD': os.environ['H_DATABASE_PASSWORD'],
+        'HOST': os.environ['H_DATABASE_HOST'],
         'PORT': '5432',
     }
 }
