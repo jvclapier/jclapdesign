@@ -28,11 +28,11 @@ SECRET_KEY = '1tld0-am7fnidv5zla2$)s+n7m%3u$fas7b!f)t9j!ozg$#w__'
 DEBUG = True
 
 ALLOWED_HOSTS = [
+     'jclapdesign.herokuapp.com/',
     'localhost',
     '127.0.0.1',
     '10.37.145.164',
     'https://jclapdesign.herokuapp.com/',
-    'jclapdesign.herokuapp.com/',
 ]
 
 
