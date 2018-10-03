@@ -20,7 +20,6 @@ django-polymorphic==1.1
 django-python3-ldap==0.9.14
 django-storages==1.6.5
 docutils==0.14
-Flask==0.12.2
 honcho==1.0.1
 html5lib==0.999999999
 itsdangerous==0.24
