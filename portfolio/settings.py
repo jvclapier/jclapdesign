@@ -90,6 +90,13 @@ DATABASES = {
         'PASSWORD': os.environ['H_DATABASE_PASSWORD'],
         'HOST': os.environ['H_DATABASE_HOST'],
         'PORT': '5432',
+
+        # 'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        # 'NAME': 'jclapdesign',
+        # 'USER': 'postgres',
+        # 'PASSWORD': 'password',
+        # 'HOST': 'localhost',
+        # 'PORT': '',
     }
 }
 
