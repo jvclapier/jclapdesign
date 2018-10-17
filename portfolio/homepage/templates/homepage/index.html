@@ -1,0 +1,343 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block resources %}
+    <link href="{% static 'homepage/index.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'main.css' %}" rel="stylesheet" type="text/css">
+
+{% endblock resources %}
+
+{% block content %}
+
+<div id="landing-background" class="container-fluid d-flex justify-content-center">
+    <!-- <object class="img-responsive rellax" style="z-index:0; top:325px;" data-rellax-speed="4" data-rellax-zindex="10" data="{% static "landing_background_front.svg" %}" type="image/svg+xml">
+    </object> -->
+    <img class="img-responsive rellax" id="landing-front" data-rellax-speed="6" data-rellax-zindex="10" src="{% static "landing_background_front.svg" %}" alt="">
+    <img id="boat" class="img-responsive rellax" style="z-index:0;" data-rellax-speed="6" src="{% static "landing_background_L2.svg" %}" alt="">
+    <img class="img-responsive rellax" style="z-index: -10; top:50px;" data-rellax-speed="5" data-rellax-zindex="-10" src="{% static "landing_background_L3_long.svg" %}" alt="">
+    <img class="img-responsive rellax" style="z-index: -15; top:60px; width:80%;" data-rellax-speed="7" data-rellax-zindex="-15" src="{% static "landing_background_title.svg" %}" alt="">
+    <img class="img-responsive rellax" style="z-index: -20;" data-rellax-speed="3" data-rellax-zindex="-20" src="{% static "landing_background_L4.svg" %}" alt="">
+    <img class="img-responsive rellax" style="z-index: -30;" data-rellax-speed="2" data-rellax-zindex="-30" src="{% static "landing_background_L5.svg" %}" alt="">
+</div>
+
+<div id="body-under-parallax" class="container-fluid">
+    <div id="hello-section" class="container-fluid">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h1>Hi there!</h1>
+                <h2>I'm Jessee Clapier.</h2>
+                <h5>My parents decided two E's were not sufficient to spell Jesse, so I have three.
+                    I am a designer. I design websites, mobile apps, marketing materials and elaborate date
+                    nights with my wife. I love beautiful, useful design and am passionate about solving
+                    problems with technology. I also travel a lot with my wife. Oh, and I code.
+                </h5>
+                <a class="" href="#">Learn more about me</a> <span class="pl-3 pr-3" style="color:#b4ff52;">|</span>
+                <a class="" href="#my-work">Continue to my work</a>
+            </div>
+        </div>
+    </div>
+    <div id="my-work" class="container-fluid">
+        <div class="row mb-5">
+            <!-- <div class="col-md-8 offset-md-2">
+                <h1>My work</h1>
+            </div> -->
+        </div>
+        <!-- <div class="row">
+            <div class="col-md-5 offset-md-1">
+                <div class="card profile-card-2">
+                    <div class="card-img-block">
+                        <img class="img-fluid" src="https://images.pexels.com/photos/870903/pexels-photo-870903.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Card image cap">
+                    </div>
+                    <div class="card-body pt-5">
+                        <img src="{% static "mentors_circle_logo.png" %}" alt="mentors international" class="profile"/>
+                        <h5 class="card-title">Mentors International</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="row">
+            <div class="col-md-4 offset-md-2">
+                    <h1>My work</h1>
+                <br>
+                <div class="container-fluid pr-5 pl-0 m-0">
+                    <p>Take a gander at my recent projects. I may not be the greatest writer but I love to tell it how it is. There is no sugar coating these experiences. If you like what you see or just want to chat
+                    about design or college football, <a id="emailme" style="color:#8bc53f; font-weight:500;" href="mailto:jvclapier@gmail.com">hit me up!</a></p>
+                    <!-- <a href="https://www.linkedin.com/in/jess-clapier-368a92111/">
+                        <i style="color:#2b2b2b;" class="fab fa-linkedin fa-2x mr-3"></i>
+                    </a>
+                    <a href="mailto:jvclapier@gmail.com">
+                        <i style="color:#2b2b2b;" class="fab fa-google-plus-square fa-2x mr-3"></i>
+                    </a>
+                    <a href="http://github.com/jvclapier">
+                        <i style="color:#2b2b2b;" class="fab fa-github-square fa-2x"></i>
+                    </a> -->
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id="card-7" class="example-2 card">
+                    <div class="wrapper">
+                        <div class="header">
+                            <div class="date">
+                                <!-- <span class="day">12</span> -->
+                                <span class="month">Sept</span>
+                                <span class="year">2018</span>
+                            </div>
+                            <ul class="menu-content">
+                                <img src="{% static "creative-cloud-cc.svg" %}" alt="">
+                                <img src="{% static "adobe-illustrator.svg" %}" alt="">
+                                <img src="{% static "sketch_logo.svg" %}" alt="">
+                            </ul>
+                        </div>
+                        <div class="data">
+                            <div class="content">
+                                <span class="author">UI/UX Design</span>
+                                <h1 class="title"><a href="/sawtooth">Sawtooth Software</a></h1>
+                                <p class="text">Creating a design system to generate consistency among a plethora of applications. Learning this is no easy task.</p>
+                                <a href="/sawtooth" class="button">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-4 offset-md-2">
+                <div id="card-6" class="example-2 card">
+                    <div class="wrapper">
+                        <div class="header">
+                            <div class="date">
+                                <!-- <span class="day">12</span> -->
+                                <span class="month">Aug</span>
+                                <span class="year">2018</span>
+                            </div>
+                            <ul class="menu-content">
+                                <img src="{% static "sketch_logo.svg" %}" alt="">
+                                <i class="fab fa-python"></i>
+                                <i class="fab fa-html5"></i>
+                            </ul>
+                        </div>
+                        <div class="data">
+                            <div class="content">
+                                <span class="author">Product Design & Front-End Dev</span>
+                                <h1 class="title"><a href="/mentors">Mentors International</a></h1>
+                                <p class="text">Traveled with my wife 7,328 miles to help this non-profit organization. Managed, designed and developed this app from the ground up.</p>
+                                <a href="/mentors" class="button">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id="card-5" class="example-2 card">
+                    <div class="wrapper">
+                        <div class="header">
+                            <div class="date">
+                                <!-- <span class="day">12</span> -->
+                                <span class="month">March</span>
+                                <span class="year">2018</span>
+                            </div>
+                            <ul class="menu-content">
+                                <img src="{% static "sketch_logo.svg" %}" alt="">
+                                <img src="{% static "adobe-illustrator.svg" %}" alt="">
+                                <i class="fab fa-css3"></i>
+                            </ul>
+                        </div>
+                        <div class="data">
+                            <div class="content">
+                                <span class="author">Design & Full Stack Dev</span>
+                                <h1 class="title"><a href="/parentiq">ParentIQ</a></h1>
+                                <p class="text">The client with never ending wishes. We've all had them, but I may have found the winner.</p>
+                                <a href="/parentiq" class="button">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-4 offset-md-2">
+                <div id="card-4" class="example-2 card">
+                    <div class="wrapper">
+                        <div class="header">
+                            <div class="date">
+                                <!-- <span class="day">12</span> -->
+                                <span class="month">Jan</span>
+                                <span class="year">2018</span>
+                            </div>
+                            <ul class="menu-content">
+                                <img src="{% static "sketch_logo.svg" %}" alt="">
+                                <i class="fab fa-wix"></i>
+                                <i class="fas fa-database"></i>
+                            </ul>
+                        </div>
+                        <div class="data">
+                            <div class="content">
+                                <span class="author">Design & Full Stack Dev</span>
+                                <h1 class="title"><a href="/oilbarn">The Oil Barn</a></h1>
+                                <p class="text">Designed and developed ecommerce site for a company selling Safflower Oil. Who knew Safflower Oil was a thing? Not me.</p>
+                                <a href="/oilbarn" class="button">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id="card-3" class="example-2 card">
+                    <div class="wrapper">
+                        <div class="header">
+                            <div class="date">
+                                <!-- <span class="day">12</span> -->
+                                <span class="month">Nov</span>
+                                <span class="year">2017</span>
+                            </div>
+                            <ul class="menu-content">
+                                <img src="{% static "adobe-illustrator.svg" %}" alt="">
+                                <i class="fab fa-apple"></i>
+                                <i class="fab fa-app-store-ios"></i>
+                            </ul>
+                        </div>
+                        <div class="data">
+                            <div class="content">
+                                <span class="author">Analysis & Design</span>
+                                <h1 class="title"><a href="/pixingo">Pixingo iOS App</a></h1>
+                                <p class="text">Revamped a struggling app that helps you better connect with ones you love. Required lots of head pounding and perseverance.</p>
+                                <a href="/pixingo" class="button">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-4 offset-md-2">
+                <div id="card-2" class="example-2 card">
+                    <div class="wrapper">
+                        <div class="header">
+                            <div class="date">
+                                <!-- <span class="day">12</span> -->
+                                <span class="month">Sept</span>
+                                <span class="year">2017</span>
+                            </div>
+                            <ul class="menu-content">
+                                <img src="{% static "creative-cloud-cc.svg" %}" alt="">
+                                <i class="fab fa-python"></i>
+                                <i class="fab fa-html5"></i>
+                            </ul>
+                        </div>
+                        <div class="data">
+                            <div class="content">
+                                <span class="author">Web Design & Front-End Dev</span>
+                                <h1 class="title"><a href="/xlr8">XLR8 Development</a></h1>
+                                <p class="text">Initially brought on just to give the homepage a facelift. Somehow I nowurrently sit as the CIO of the company.</p>
+                                <a href="/xlr8" class="button">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id="card-1" class="example-2 card">
+                    <div class="wrapper">
+                        <div class="header">
+                            <div class="date">
+                                <!-- <span class="day">12</span> -->
+                                <span class="month">Oct</span>
+                                <span class="year">2016</span>
+                            </div>
+                            <ul class="menu-content">
+                                <img src="{% static "creative-cloud-cc.svg" %}" alt="">
+                                <i class="fab fa-alipay"></i>
+                                <img src="{% static "adobe-illustrator.svg" %}" alt="">
+                            </ul>
+                        </div>
+                        <div class="data">
+                            <div class="content">
+                                <span class="author">Co-Founder & Web Designer</span>
+                                <h1 class="title"><a href="/boda">BODA Lens LLC.</a></h1>
+                                <p class="text">There is no escaping the entrepeneurship bug in me. Built this company from the ground up and learned more than I could have ever imagined.</p>
+                                <a href="/boda" class="button">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="page-footer font-small blue">
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2018 Copyright:
+        <a style="color:#8bc53f;" href="https://mdbootstrap.com/bootstrap-tutorial/"> jclapdesign.com</a>
+      </div>
+      <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+</div>
+
+
+<!-- JS -->
+<script src="{% static "rellax.min.js" %}"></script>
+<script type="text/javascript" src="{% static "homepage/index.js" %}"></script>
+
+<script>
+    // Accepts any class name
+    var rellax = new Rellax('.rellax');
+
+    // $(function() {
+    //     $(window).scroll(function () {
+    //         if ($(this).scrollTop() > 50) {
+    //             $(‘body’).addClass(‘changeColor’)
+    //         }
+    //         if ($(this).scrollTop() < 50) {
+    //             $(‘body’).removeClass(‘changeColor’)
+    //         }
+    //     });
+    // });
+    $(document).ready(function() {
+        var logo = $("#my-work"); //get offset of second div
+        var offset = logo.offset().top; //check for top property
+        $(function () {
+            $(window).scroll(function () {
+                if ($(window).scrollTop() >= offset) {
+                    $(".cls-1").css("fill","#2b2b2b");
+                    $("#side-menu-toggle").css("color", "#2b2b2b");
+                } else {
+                    $(".cls-1").css("fill","#b4ff52");
+                    $("#side-menu-toggle").css("color","#b4ff52");
+                }
+            });
+        });
+    });
+
+    // window.onbeforeunload = function () {
+    //     window.scrollTo(0, 0);
+    // }
+
+    // $(document).ready(function () {
+    //     var $horizontal = $('#boat');
+    //
+    //     $(window).scroll(function () {
+    //         var s = $(this).scrollTop(),
+    //         d = $(document).height(),
+    //         c = $(this).height();
+    //
+    //         scrollPercent = (s / (d - c));
+    //
+    //         var position = (scrollPercent * ($(document).width() - $horizontal.width()));
+    //
+    //         $horizontal.css({
+    //             'left': position
+    //         });
+    //     });
+    // });
+
+
+</script>
+
+
+{% endblock content %}
